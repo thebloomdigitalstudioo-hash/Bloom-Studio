@@ -6,7 +6,24 @@
 <title>Synnova Digital Studio</title>
 
 <style>
-body {
+.cta-btn {
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: #d8c7b7;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #cbb7a5;
+  transform: translateY(-2px);
+}
+  body {
   margin: 0;
   font-family: "Georgia", "Times New Roman", serif;
   background-color: #e9e1dc;
@@ -185,7 +202,6 @@ footer {
   <div class="hero">
     <h1>We Build Your Online Presence</h1>
     <p>Websites & social media that attract real clients</p>
-    <button>Get Started</button>
   </div>
 
   <div class="about-box">
@@ -206,6 +222,9 @@ footer {
     <p>
       We focus on simple, efficient solutions that help promote your business, improve your online presence, and create a strong first impression that lasts.
     </p>
+    <button class="cta-btn" onclick="window.location.href='mailto:thebloomdigitalstudioo@gmail.com'">
+  Book a Free Consultation
+</button>
   </div>
 </section>
 
