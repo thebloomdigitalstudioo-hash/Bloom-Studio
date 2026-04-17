@@ -8,7 +8,7 @@
 <style>
 body {
   margin: 0;
-  font-style: italic;
+  font-family: "Georgia", "Times New Roman", serif;
   background-color: #e9e1dc;
   color: #333;
 }
@@ -64,21 +64,58 @@ nav a.active {
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .hero p {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 15px;
+  color: #555;
 }
 
+/* BUTTON */
 button {
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #d8c7b7;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 14px 32px;
+  border-radius: 30px;
   cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #cbb7a5;
+  transform: translateY(-2px);
+}
+
+/* LUXURY ABOUT BOX */
+.about-box {
+  background: #ffffff;
+  max-width: 850px;
+  margin: 80px auto;
+  padding: 50px 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  text-align: left;
+  line-height: 1.8;
+}
+
+.about-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about-box p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #444;
 }
 
 /* SECTIONS */
@@ -150,6 +187,26 @@ footer {
     <p>Websites & social media that attract real clients</p>
     <button>Get Started</button>
   </div>
+
+  <div class="about-box">
+    <h2>Our Approach</h2>
+
+    <p>
+      We work closely with you to create a website that truly represents your business—clean, modern, and tailored to your vision. Our goal is to make your company stand out online with a professional look that builds trust and attracts customers.
+    </p>
+
+    <p>
+      We also refine your social media presence, giving it a consistent and polished style so your brand looks clear, professional, and easy to connect with across all platforms.
+    </p>
+
+    <p>
+      From design to launch, we handle the details—layout, structure, and overall user experience—so your website not only looks great but is easy to navigate and effective at turning visitors into customers.
+    </p>
+
+    <p>
+      We focus on simple, efficient solutions that help promote your business, improve your online presence, and create a strong first impression that lasts.
+    </p>
+  </div>
 </section>
 
 <!-- SERVICES -->
@@ -190,9 +247,9 @@ footer {
   <h2>Contact Us</h2>
   <p>Instagram: @the_bloom_digitalstudio</p>
   <p>Email: thebloomdigitalstudioo@gmail.com</p>
-<button onclick="window.location.href='mailto:thebloomdigitalstudioo@gmail.com'">
-  Message Us
-</button>
+  <button onclick="window.location.href='mailto:thebloomdigitalstudioo@gmail.com'">
+    Message Us
+  </button>
 </section>
 
 <footer>
@@ -215,6 +272,10 @@ function showTab(tabId, event) {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('nav a')[0].click();
 });
+</script>
+
+</body>
+</html>
 </script>
 
 </body>
